@@ -60,7 +60,7 @@ SQL speichert in Seiten a 8 kb
 
 Pro Seiten max 700 Datensätze
 ein DS max 8060 bytes
-mx 8072 bytes belegbar
+max 8072 bytes belegbar
 
 Ziel: seiten möglichst ohne Verlust, da Seiten 1:1 in RAM geladen werden
 
@@ -130,6 +130,8 @@ dbcc showcontig('t1')
 
 --- Gescannte Seiten.............................: 20000
 --- Mittlere Seitendichte (voll).....................: 50.79%
+
+dbcc showcontig()
 
 
 
