@@ -215,7 +215,134 @@ While		(select MAX(freight) from o1) <1500 /1.1
 	Begin
 	
 		update o1 set Freight = Freight * 1.1
+
 		
 	end
+
+	rollback
+
+
+
+begin tran
+
+ROLLBACK--macht sofort TX rückgängig auch wenn sie verschachtelt waren
+
+COMMIT --bestätigt jede einzelen TX auch bei verschachtelten
+
+
+begin tran
+update Customers set City = 'PARIS'
+select * from customers
+
+
+---CASE WHEN 
+--unter 10  A Kunde
+--über 500  C Kunde
+--Rest      B
+
+
+--Ausgabe : Customerid, freight, A Kunde / B-Kunde  / C-Kunde
+
+select customerid, freight , 'AKunde'
+from o1 
+where freight < 10
+UNION ALL
+select customerid, freight , 'CKunde'
+from o1 
+where freight > 500
+UNION ALL
+select customerid, freight , 'BKunde'
+from o1 
+where freight between 10 and 500
+
+
+select 
+	 CASE
+		WHEN BEDING then 100
+	 END
+
+
+select customerid , freight, 
+		CASE
+				when freight < 10 then 'A Kunde'
+				when freight > 500 then 'C Kunde'
+				else 'B Kunde'
+		END as KundenType
+from o1 order by Kundentype desc
+
+--auch möglich wie ein where mit Like
+-- CASE WHEN freight between 1 and 10
+--         when country like 'A%'
+
+
+--kleines Beispiel
+
+
+Liste aus der Tabelle Customers alls Kunden auf
+--aber mit Merkmal EU NON EU
+
+--Italy, Austria, Germany  
+--Ausgabe Customerid, Companyname, Country, EUNOTEU
+
+select customerid, companyname, country,
+		CASE
+			WHEN country IN ('Italy', 'Germany', 'Austria') then 'EU'
+			ELSE 'NOT EU'
+		END as EUNOTEU
+from Customers
+
+select Freight, 
+	freight *1.1,
+	case 
+		when Country= 'AUSTRIA' then Freight *1.1
+	end
+from o1
+
+
+			
+from o1
+
+
+
+
+---Morgen--
+
+--WHERE: Wildcards
+
+--alle die mit A beginnen
+--vorletzter Buchstabe muss ein a    _
+--zwischen a bis d und alle mit g bis m beginnend
+
+[0-9]   [a-m]  [abcd]  [acfh]
+
+Suche nach % ??
+Suche nach '
+
+Suche nach PINs die nicht korrekt
+between 0 and 9999
+___9
+0009
+
+
+TX-->Sperren--> IX 
+
+CTE
+
+select * from employees
+
+
+
+--Rangvergabe
+--beste Kunde pro Land
+
+LAND KUNDE UMSATZ
+
+Window Functions
+
+
+TOP 10  order by.. es müssen aber 11 rauskommen weil der 10. und 11 densleben Wert haben
+
+
+
 
 

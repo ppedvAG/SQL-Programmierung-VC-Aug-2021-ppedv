@@ -159,6 +159,82 @@ select * from orders where OrderID < @par1
 else
 select * from products where UnitPrice < @par1 --und die hier grob geschätzt
 
+--Um Ergebnisse der Prozedur weiter zu verwenden braucht man Variablen
+
+
+
+--Proz
+alter proc gpSchnittFracht @schnitt money output --Ausgabe und Eingabe default
+as
+select @schnitt=AVG(freight) from orders
+GO
+
+--Code
+declare @result as  int
+
+exec gpSchnittFracht @schnitt=@result output  --@result= @schnitt falsch!!
+
+select @result
+
+select * from orders where Freight < @result
+
+--mit Hilfe einer Proz die Anzahl der Kunden in einem best Land
+--die Anzhal im weitere Code verwenden
+
+--Idee.. 
+Proz.. die sucht alle Kunden heraus die einem Land wohnen
+
+exec proc  Italy --> Ausgabe Anzahl 
+
+
+select @Anzahl
+
+alter proc gpKundenLand @land varchar(50), @Anz int output
+as
+select @Anz=COUNT(*) from Customers where Country = @land and sp=@anz
+go
+
+
+declare @Anzahl int
+exec gpKundenLand 'Italy', @Anz=@Anzahl output
+select @Anzahl
+
+
+--Letzte Frage: Tabellen als Variablen
+
+
+declare @varTab as table (id int, sp1 int)
+
+
+select * from @varTab
+
+insert into @varTab
+select 1,10
+
+select * from @vartab
+
+
+
+--vs #Tabellen
+
+--TabVariablen bis max 1000 Zeilen
+--gelten nur während dem Batch
+
+
+--#tabelle gelten durchaus länger .. solange die Session existiert
+--mehr Zeilen auch ok....
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -175,3 +251,20 @@ select * from products where UnitPrice < @par1 --und die hier grob geschätzt
 
 
 select * from Customers where CustomerID like '%'
+
+--mehr Parameter
+create procedure gpDemoXY @par1 int, @par2 int
+as
+select @par1*@par2;
+GO
+
+alter procedure gpDemoXY @par1 int=100, @par2 int=200
+as
+select @par1*@par2;
+GO
+
+exec gpDemoXY
+
+exec gpDemoXY @par2=300, @par1=5
+
+
