@@ -11,7 +11,8 @@
 
 # Tag 3
 * CTE
-# Except Intersect
-# Window functions
-# Cursor
-# temp Tabellen
+* Except Intersect
+* Window functions
+* Cursor
+* temp Tabellen
+* Trigger
