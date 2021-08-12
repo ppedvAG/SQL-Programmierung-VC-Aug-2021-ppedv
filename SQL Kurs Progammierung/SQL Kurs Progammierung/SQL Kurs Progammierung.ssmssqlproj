@@ -1,9 +1,148 @@
-<?xml version="1.0" encoding="utf-8"?>
-<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SqlWorkbenchSqlProject">
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SQL Kurs Progammierung">
   <Items>
-    <LogicalFolder Name="Connections" Type="2" />
-    <LogicalFolder Name="Queries" Type="0" />
-    <LogicalFolder Name="Miscellaneous" Type="3" />
-
+    <LogicalFolder Name="Verbindungen" Type="2" Sorted="true">
+      <Items />
+    </LogicalFolder>
+    <LogicalFolder Name="Abfragen" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="00_Basics.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>00_Basics.sql</FullPath>
+        </FileNode>
+        <FileNode Name="01_DBDesign.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>01_DBDesign.sql</FullPath>
+        </FileNode>
+        <FileNode Name="02_indizes.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>02_indizes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="03_Sichten.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>03_Sichten.sql</FullPath>
+        </FileNode>
+        <FileNode Name="04_Prozeduren.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>04_Prozeduren.sql</FullPath>
+        </FileNode>
+        <FileNode Name="05_Variablen.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>05_Variablen.sql</FullPath>
+        </FileNode>
+        <FileNode Name="06_Salamitaktik.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>06_Salamitaktik.sql</FullPath>
+        </FileNode>
+        <FileNode Name="07_UNION.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>07_UNION.sql</FullPath>
+        </FileNode>
+        <FileNode Name="08_TempTabellen.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>08_TempTabellen.sql</FullPath>
+        </FileNode>
+        <FileNode Name="09_Except_Intersect.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>09_Except_Intersect.sql</FullPath>
+        </FileNode>
+        <FileNode Name="10_Konstruktionen.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>10_Konstruktionen.sql</FullPath>
+        </FileNode>
+        <FileNode Name="11_Transactions.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>11_Transactions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="12_Errorhandling.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>12_Errorhandling.sql</FullPath>
+        </FileNode>
+        <FileNode Name="13_CTE.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>13_CTE.sql</FullPath>
+        </FileNode>
+        <FileNode Name="14_Window Functions.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>14_Window Functions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="15_Trigger.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>15_Trigger.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Recap Tag2.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Recap Tag2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SP_mit_tab_Übergabe.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SP_mit_tab_Übergabe.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Verschachtelte Transactions.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Verschachtelte Transactions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="x_Logischer Fluss.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>x_Logischer Fluss.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Sonstiges" Type="3" Sorted="true">
+      <Items>
+        <FileNode Name="Readme.md">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Readme.md</FullPath>
+        </FileNode>
+        <FileNode Name="SQL Kurs Progammierung.ssmssqlproj">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQL Kurs Progammierung.ssmssqlproj</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
   </Items>
 </SqlWorkbenchSqlProject>
